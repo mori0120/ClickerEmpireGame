@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="bg-secondary">
+    <div class="h-100vh d-flex justify-content-center align-items-center text-center py-3">
+        <!-- 1ページ目はここから -->
+        <div id="login-page" class="bg-white col-10 col-md-6 p-3">
+            <h2>Let's start Clicker Empire Game</h2>
+            <form id="game-form" class="form">
+                <div class="form-group">
+                    <input type="text" name="userName" class="col-12" placeholder="Write your name" required>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="col-6 pl-0">
+                        <button class="btn btn-outline-primary col-12 new-btn">New Player</button>
+                    </div>
+                    <div class="col-6 pr-0">
+                        <button class="btn btn-primary col-12 login-btn">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- ２ページ目はここから -->
+        <div id="main-page" class="d-none bg-info col-12 col-md-9 p-3">
+            <div class="">
+                <div class="bg-secondary d-flex flex-wrap p-1 text-left">
+                    <div id="user-name" class="bg-info col-3"><h5>Name: </h5></div>
+                    <div id="user-age" class="bg-info col-3"><h5>Age: </h5></div>
+                    <div id="user-days" class="bg-info col-6"><h5>Days: </h5></div>
+                </div>
+                <div class="bg-secondary d-flex px-1 pb-1">
+                    <div id="user-daily-income" class="bg-info col-12 text-left"><h5>Unearned Income: </h5></div>
+                </div>
+                <div class="bg-secondary d-flex px-1">
+                    <div id="user-money" class="bg-danger col-12 text-left"><h4>Your money: </h4></div>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap">
+                <div class="col-sm-4 bg-secondary text-center p-1 h-60vh">
+                    <div id="earn-status" class="bg-info py-1">
+                        <h5>0 Burgers</h5>
+                        <h6>One Click ¥0</h6>
+                    </div>
+                    <div class="bg-secondary py-3">
+                        <div id="work-btn" class="hover">
+                            <img src="https://cdn.pixabay.com/photo/2012/04/13/01/51/hamburger-31775_1280.png">
+                        </div>
+                    </div>
+                </div>
+                <div id="option-window" class="col-sm-8 bg-secondary overflow-auto py-1 pr-1 h-60vh">
+                <!-- ここから選択肢画面 or 購入画面 -->
+                </div>
+            </div>
+            <div class="mt-2 d-flex justify-content-end">
+                <div id="save-btn" class="hover mx-3"><i class="far fa-save fa-3x"></i></div>
+                <div id="restart-btn" class="hover mx-3"><i class="fas fa-redo fa-3x"></i></div>
+                <div id="exit-btn" class="hover mx-3"><i class="fas fa-sign-out-alt fa-3x"></i></div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
